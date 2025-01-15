@@ -6,6 +6,22 @@
     <title>Mollie Angeline Egan</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+
+    <style>
+        /* fade-in page load */
+        body {
+            opacity: 0;
+            -webkit-transition: opacity .5s ease-in;
+            -moz-transition: opacity .5s ease-in;
+            -o-transition: opacity .5s ease-in;
+            transition: opacity .5s ease-in;
+        }
+
+        body.loaded {
+            opacity: 1;
+        }
+    </style>
+
 </head>
 <body>
     <div class="container">
@@ -13,7 +29,7 @@
         
         <main>
             <div class="row g-5 justify-content-center">
-                <div class="col-sm-8 col-md-8 col-lg-6">
+                <div class="col-10 col-sm-8 col-md-8 col-lg-6">
                             <h2 class="work-title-story" style="text-align: center;">Vainglory</h2>
                             <p>
                                 <em>Will it cradle me tenderly or break my bones?</em> The sand wet, the sky insipid. She leans over the rock's edge and allows herself limp. Her arms emphatically widespread only to be instinctively brought to her breast. Regret strikes sharply as she falls. Her query solved as her body softly smacks upon the sand. She lies still. The water crashes forward then pulls back once more. She watches, weightily holding her eyelids, distorting her vision with each shorebreak. She rises, staring at the frantic girl in the sand. <em>Christ, the ignominy.</em> The embarrassment more pain-inducing than where she will bruise tomorrow. Her cheeks flush as she envisions the amusement her imprint will bring. They will surely sneer at the stupidity of the one they presume fell off the rock. She digs her foot in the sand, it seeps into her sock. Stomping harshly while finding pleasure in the sight of the now disfigured girl in the sand beneath her. She struts at the waves as sand crunches between her teeth. <em> I chose to fling myself off the rock due to free will, rather than a meek attempt to end all.</em> A strive to ease her mania. Her mind brims with morbidity accompanied by passionate romanization. Intrusiveness being her most persistent bite of all. She finds pure horror in the idea that her thoughts, her soul intimacies, are as frequent to others. Others who shamefully leave them unspoken. The pure vulgarity of the mind that brings one unsettlement is her sole claim to selfdom. <em>A stain on my veil sewn of beauty and grace is a rarity. The girl in the sand and I could not be one, she too damaged and I too desirable.</em> She floats on her amour propre while choking on her own vanity. </p>
@@ -23,5 +39,11 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+        document.body.classList.add("loaded");
+        });
+    </script>
 </body>
 </html>
