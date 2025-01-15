@@ -12,11 +12,12 @@ body {
 }
 
 .work-title, .work-title-story {
-    font-family: "Times New Roman", Georgia, serif;;
-    font-style: italic;
+    font-family: "didot", Georgia, serif;
+    /* font-family: "Times New Roman", Georgia, serif; */
+    /* font-style: italic; */
     font-size: 3rem;
-    /* margin-top: .5rem; */
-    letter-spacing: -0.03em;
+    /* letter-spacing: -0.03em; */
+    letter-spacing: -0.1em;
 }
 
 .work-title {
@@ -46,6 +47,33 @@ body {
 a {color: #000;}
 
 p {color: #888; font-size: .85rem; line-height: 1.85rem;font-family: Georgia, 'Times New Roman', Times, serif;}
+
+
+@font-face {
+    font-family: 'didot';
+    src: url('didot-w01-italic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+
+
+/* <uniquifier>: Use a unique and descriptive class name
+<weight>: Use a value from 400 to 900 */
+
+/* .bodoni-moda-regular {
+  font-family: "Bodoni Moda", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.bodoni-moda-medium {
+    font-family: "Bodoni Moda", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: italic;
+  } */
 
 /* media queries */
 
